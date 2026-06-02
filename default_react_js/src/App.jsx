@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Input from './components/Input.jsx'
 
 function App() {
 
@@ -27,16 +28,14 @@ function App() {
 
       <h1>Simple Calculator</h1>
 
-      <input
+      <Input
         type="number"
         placeholder="First number"
         value={firstNumber}
         onChange={(e) => setFirstNumber(e.target.value)}
       />
 
-      <br /><br />
-
-      <input
+      <Input
         type="number"
         placeholder="Second number"
         value={secondNumber}
