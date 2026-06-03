@@ -1,16 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import Home from './components/Home'
+import Data from './components/Data'
 import './App.css'
 
 function App() {
- 
 
+  const [show, setShow] = useState(false)
+  
   return (
     <>
-      
+      <h1 style={{ backgroundColor: 'pink', color: 'white' }}>Conditional rendering </h1>
+      <button onClick={() => setShow(!show)}>
+        click to view data
+      </button>
+      {show && <Data />}
     </>
   )
 }
