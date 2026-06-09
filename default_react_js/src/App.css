@@ -1,4 +1,4 @@
-/* Reset & font */
+/* Reset và font */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,8 +7,8 @@
 
 html, body {
     height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eef2f7;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f4f7fb;
 }
 
 /* Căn giữa màn hình */
@@ -19,23 +19,22 @@ body {
     padding: 2rem;
 }
 
-/* Container của form */
+/* Container form */
 div[style] {
-    background: #ffffff;
+    background-color: #ffffff;
     padding: 3rem 2.5rem;
     width: 600px;
-    max-width: 100%;
+    max-width: 90vw;
     border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* Tiêu đề form */
+/* Tiêu đề */
 h1 {
     text-align: center;
     color: #333;
-    margin-bottom: 2rem;
     font-size: 2rem;
-    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 /* Label */
@@ -53,10 +52,9 @@ input {
     font-size: 1rem;
     border: 1.8px solid #ccc;
     border-radius: 6px;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
     outline: none;
     font-family: inherit;
-    background-color: #fff;
 }
 
 input:focus {
@@ -64,12 +62,12 @@ input:focus {
     box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
 }
 
-/* Form group */
+/* Group mỗi trường */
 .custom-input {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.8rem;
 }
 
-/* Nếu có lỗi thì đổi màu */
+/* Nếu có lỗi thì đổi style */
 .custom-input-error label {
     color: #e74c3c;
 }
@@ -79,11 +77,12 @@ input:focus {
     box-shadow: 0 0 6px rgba(231, 76, 60, 0.5);
 }
 
-/* Lỗi */
+/* Text lỗi */
 .error {
     color: #e74c3c;
     font-size: 0.9rem;
     margin-top: 0.4rem;
+    font-weight: 500;
 }
 
 /* Nút submit */
@@ -92,7 +91,7 @@ button {
     padding: 0.75rem;
     font-size: 1.1rem;
     font-weight: 600;
-    color: white;
+    color: #fff;
     background-color: #4a90e2;
     border: none;
     border-radius: 6px;
@@ -107,6 +106,6 @@ button:hover {
 
 button:active {
     background-color: #2a5f9e;
-    box-shadow: none;
     transform: translateY(1px);
+    box-shadow: none;
 }
