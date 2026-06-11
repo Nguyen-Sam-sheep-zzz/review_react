@@ -1,25 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import BookList from './pages/BookList';
+import BookAdd from './pages/BookAdd';
+import BookEdit from './pages/BookEdit';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <h1>Danh sách công việc của tôi</h1>
-    <ul>
-      <li>Học bài react</li>
-      <li>Hoàn thành bài tập lập trình </li>
-      <li>Dọn dẹp bàn làm việc </li>
-    </ul>
-    <p>
-      Chúc các bạn hoàn thành công việc tốt nhất hôm nay!
-    </p>
-    </>
-  )
+    <div>
+      <Routes>
+        {/* Trang danh sách mặc định */}
+        <Route path="/" element={<BookList />} />
+        
+        {/* Trang tạo mới */}
+        <Route path="/add" element={<BookAdd />} />
+        
+        {/* Trang sửa (chứa tham số động :id trên url) */}
+        <Route path="/edit/:id" element={<BookEdit />} />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
