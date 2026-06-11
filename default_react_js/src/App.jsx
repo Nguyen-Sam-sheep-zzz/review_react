@@ -1,12 +1,12 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Category from "./components/Category";
-import Product from "./components/Product";
+import React from 'react';
+import TodoList from './components/TodoList';
 
 function App() {
-    // return (
-       
-    // );
+  return (
+    <div style={{ backgroundColor: '#f8f9fa', minHeight: '100vh', padding: '20px' }}>
+      <TodoList />
+    </div>
+  );
 }
 
 export default App;
